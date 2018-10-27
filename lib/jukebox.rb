@@ -35,20 +35,19 @@ def play(songs)
   end
 end
 
-
-# def play(songs)
-#   puts "Please enter a song name or number:"
-#   user = gets.chomp
-#   str = list(songs).join(" ")
-#   if str.include?(user)
-#     puts "Playing " + user
-#   else
-#     puts "Invalid input, please try again"
-#   end
-# end
- def exit_jukebox
+def exit_jukebox
   puts "Goodbye"
 end
+
+def run
+  help
+  puts "Please enter a command:"
+  input = gets.chomp
+  while 
+
+
+
+
  def run(songs)
   help
   while true
