@@ -18,21 +18,11 @@ def help
   puts "- exit : exits the program"
 end
 
-def list(array)
-  count = 1 
-  new_arr = []
-  array.each do |song|
-    new_arr << "#{count}. " + "#{song} "
-  count += 1 
+def list(songs)
+  songs.each_with_index do |song, i|
+    puts "#{i+1}. #{song}"
+  end 
 end
-return new_arr
-end
-
-
-
-
-
-
 
 # def list(songs)
 #   new = []
