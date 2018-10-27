@@ -26,7 +26,7 @@ end
 
 def play(array)
   puts "Please enter a song name or number:"
-  input = gets.chomp!
+  input = gets.chomp
   string = list(array).join(" ")
   if string.include?(input)
     puts "Playing " + input
@@ -36,16 +36,6 @@ def play(array)
 end
 
 
- def play(songs)
-  puts "Please enter a song name or number:"
-  user = gets.chomp
-  str = list(songs).join(" ")
-  if str.include?(user)
-    puts "Playing " + user
-  else
-    puts "Invalid input, please try again"
-  end
-end
  def exit_jukebox
   puts "Goodbye"
 end
