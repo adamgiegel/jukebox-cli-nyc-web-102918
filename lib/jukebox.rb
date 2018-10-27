@@ -22,7 +22,6 @@ def list(array)
   count = 1 
   new_string = ""
   array.each do |song|
-  puts count
     new_string+= "#{count}. " + "#{song} "
   count += 1 
 end
