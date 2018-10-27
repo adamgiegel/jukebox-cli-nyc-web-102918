@@ -21,7 +21,7 @@ end
 def list(array)
   count = 1 
   array.each do |song|
-   puts "#{count} + #{song}"
+    "#{count} + #{song}"
   count += 1 
 end
 end
@@ -40,7 +40,7 @@ end
 #   end
 #   puts new
 #   new
-end
+# end
  def play(songs)
   puts "Please enter a song name or number:"
   user = gets.chomp
