@@ -21,7 +21,7 @@ end
 def list(array)
   count = 1 
   array.each do |song|
-    "#{count} + #{song}"
+   puts "#{count} + #{song}"
   count += 1 
 end
 end
