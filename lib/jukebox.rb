@@ -24,16 +24,16 @@ def list(songs)
   end 
 end
 
-# def play(array)
-#   puts "Please enter a song name or number:"
-#   input = gets.chomp
-#   string = list(array).join(" ")
-#   if string.include?(input)
-#     puts "Playing " + input
-#   else 
-#     puts "Invalid Input, please try again"
-#   end
-# end
+def play(array)
+  puts "Please enter a song name or number:"
+  input = gets.chomp
+  string = list(array).join(" ")
+  if string.include?(input)
+    puts "Playing " + input
+  else 
+    puts "Invalid Input, please try again"
+  end
+end
 
 
  def play(songs)
