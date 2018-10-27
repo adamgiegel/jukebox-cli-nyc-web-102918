@@ -19,6 +19,13 @@ def help
 end
 
 
+
+
+
+
+
+
+
  def list(songs)
   new = []
   songs.each_with_index do |s,i|
