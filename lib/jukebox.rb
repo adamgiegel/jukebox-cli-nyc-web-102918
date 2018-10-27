@@ -43,8 +43,15 @@ def run
   help
   puts "Please enter a command:"
   input = gets.chomp
-  while 
-
+  while input != "exit"
+    if input == "list"
+      puts list(songs)
+    elsif input == "play"
+      puts play(songs)
+    elsif input == "help"
+      help
+    elsif input == "exit_jukebox"
+      exit_jukebox
 
 
 
