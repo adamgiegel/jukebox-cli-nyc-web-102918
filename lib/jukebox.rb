@@ -24,15 +24,6 @@ def list(songs)
   end 
 end
 
-# def list(songs)
-#   new = []
-#   songs.each_with_index do |s,i|
-#     n = i.to_i + 1
-#     new << n.to_s + ". " + s
-#   end
-#   puts new
-#   new
-# end
  def play(songs)
   puts "Please enter a song name or number:"
   user = gets.chomp
