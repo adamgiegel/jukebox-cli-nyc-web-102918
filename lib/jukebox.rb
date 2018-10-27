@@ -18,3 +18,21 @@ def help
   puts "- exit : exits this program"
 end	 
 
+def list(array)
+  count = 1
+  array.each do |song|
+    "#{count}. #{song}"
+    count += 1
+  end
+
+def play(array)
+  puts "Please enter a song name or number"
+  input = gets.chomp
+  new_str = list(songs).join(" ")
+  if new_str.include?(input)
+    puts "Playing " + input
+  else
+    puts "Invalid input, please try again"
+  end
+end
+end
