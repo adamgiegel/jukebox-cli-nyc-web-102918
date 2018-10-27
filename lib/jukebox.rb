@@ -20,10 +20,12 @@ end
 
 def list(array)
   count = 1 
+  new_string = ""
   array.each do |song|
-    "#{count} + #{song}"
+    new_string += "#{count} + #{song}"
   count += 1 
 end
+return new_string
 end
 
 
