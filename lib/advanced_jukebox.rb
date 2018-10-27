@@ -12,29 +12,4 @@ my_songs = {
 "Graduation Failed" => '< path to this directory >/jukebox-cli/audio/Emerald-Park/07.mp3'
 }
 
-def list(array)
-  count = 1
-  array.each do |song|
-    "#{count}. #{song}"
-    count += 1
-  end
 
-def play(array)
-  puts "Please enter a song name or number"
-  input = gets.chomp
-  new_str = list(songs).join(" ")
-  if new_str.include?(input)
-    puts "Playing " + input
-  else
-    puts "Invalid input, please try again"
-  end
-end
-end
-
-def exit_jukebox
-  #this method is the same as in jukebox.rb
-end
-
-def run(my_songs)
-  #this method is the same as in jukebox.rb
-end
